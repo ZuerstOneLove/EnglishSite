@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Сравнение ИТ-компаний</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <!-- Hero Section -->
+    <div class="hero">
+      <div class="container">
+        <h1>Сравнение ИТ-компаний</h1>
+        <p>Сравнительный анализ российских и зарубежных ИТ-компаний</p>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container main-content">
+      <!-- Filters -->
+      <div class="filters">
+        <div class="filter-group">
+          <button class="filter-btn active" data-size="large">Крупные компании</button>
+          <button class="filter-btn" data-size="small">Малые компании</button>
+        </div>
+        <div class="filter-group">
+          <button class="filter-btn active" data-view="table">Таблица</button>
+          <button class="filter-btn" data-view="cards">Карточки</button>
+        </div>
+      </div>
+
+      <!-- Company Selection -->
+      <div class="company-selection">
+        <h2>Выберите компании для сравнения</h2>
+        <div class="selection-grid">
+          <div class="select-wrapper">
+            <label>Первая компания</label>
+            <select id="company1">
+              <option value="">Выберите компанию</option>
+            </select>
+          </div>
+          <div class="select-wrapper">
+            <label>Вторая компания</label>
+            <select id="company2">
+              <option value="">Выберите компанию</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- Comparison View -->
+      <div id="comparisonView"></div>
+
+      <!-- Company Cards -->
+      <div id="companyCards" class="company-cards hidden"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>© 2024 IT Companies Comparison. Все права защищены.</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
