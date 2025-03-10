@@ -21,7 +21,7 @@ body {
 /* Hero Section */
 .hero {
   background: linear-gradient(rgba(37, 99, 235, 0.9), rgba(30, 64, 175, 0.9)),
-              url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80') center/cover;
+              url('pictures/photo.avif') center/cover;
   color: white;
   padding: 4rem 0;
   margin-bottom: 2rem;
