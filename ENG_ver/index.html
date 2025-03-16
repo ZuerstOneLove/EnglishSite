@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comparison of IT companies</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <!-- Hero Section -->
+    <div class="hero">
+      <button class="Rus-button btn-15" onclick="openRus()">RUS</button>
+      <div class="container"style="text-align: center;">
+        <h1>Comparison of IT companies</h1>
+        <p>Comparative analysis of Russian and foreign IT companies</p>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container main-content">
+      <!-- Filters -->
+      <div class="filters">
+        <div class="filter-group">
+          <button class="filter-btn active" data-size="large">Large companies</button>
+          <button class="filter-btn" data-size="small">Small companies</button>
+        </div>
+        <div class="filter-group">
+          <button class="filter-btn active" data-view="table">Table</button>
+          <button class="filter-btn" data-view="cards">Cards</button>
+        </div>
+      </div>
+
+      <!-- Company Selection -->
+      <div class="company-selection">
+        <h2>Select companies to compare</h2>
+        <div class="selection-grid">
+          <div class="select-wrapper">
+            <label>First company</label>
+            <select id="company1">
+              <option value="">Select a company</option>
+            </select>
+          </div>
+          <div class="select-wrapper">
+            <label>Second company</label>
+            <select id="company2">
+              <option value=""style="text-align: center;">Select a company</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- Comparison View -->
+      <div id="comparisonView"></div>
+
+      <!-- Company Cards -->
+      <div id="companyCards" class="company-cards hidden"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>© 2024 IT Companies Comparison. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
