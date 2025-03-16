@@ -2,18 +2,18 @@
 const companies = [
   {
     id: 'yandex',
-    name: 'Яндекс',
+    name: 'Yandex',
     region: 'russia',
     size: 'large',
     logo: 'pictures/Yandex_icon.png',
     employees: '10000+',
-    salary: '250-600 тыс. ₽',
-    market: 'Международный',
-    culture: 'Развитая корпоративная культура',
-    career: 'Многоступенчатая система роста',
-    projects: 'Масштабные продуктовые проекты',
-    education: 'Яндекс.Практикум, внутренние программы',
-    workProcess: 'Гибридный формат'
+    salary: '250-600k ₽',
+    market: 'International',
+    culture: 'Developed corporate culture',
+    career: 'Multi-stage growth system',
+    projects: 'Large-scale product projects',
+    education: 'practicum.yandex, internal programs',
+    workProcess: 'Hybrid format'
   },
   {
     id: 'vk',
@@ -22,43 +22,43 @@ const companies = [
     size: 'large',
     logo: 'pictures/VK.com-logo.png',
     employees: '8000+',
-    salary: '200-500 тыс. ₽',
-    market: 'Федеральный',
-    culture: 'Формальная структура',
-    career: 'Четкая карьерная лестница',
-    projects: 'Крупные соцсети и сервисы',
-    education: 'Корпоративный университет',
-    workProcess: 'Гибкий график'
+    salary: '200-500k ₽',
+    market: 'Governmental',
+    culture: 'Formal structure',
+    career: 'Clear career ladder',
+    projects: 'Large social networks and services',
+    education: 'Corporate University',
+    workProcess: 'Flexible schedule'
   },
   {
     id: 'sber',
-    name: 'Сбер',
+    name: 'Sber',
     region: 'russia',
     size: 'large',
     logo: 'pictures/Sberbank_Logo_2020.png',
     employees: '20000+',
-    salary: '180-450 тыс. ₽',
-    market: 'Национальный',
-    culture: 'Корпоративная культура',
-    career: 'Система грейдов',
-    projects: 'Финтех и экосистема',
-    education: 'СберУниверситет',
-    workProcess: 'Гибридный формат'
+    salary: '180-450k ₽',
+    market: 'National',
+    culture: 'Corporate culture',
+    career: 'Grade system',
+    projects: 'Fintech and the ecosystem',
+    education: 'SberUniversity',
+    workProcess: 'Flexible schedule'
   },
   {
     id: 'tinkoff',
-    name: 'Тинькофф',
+    name: 'Tinkoff',
     region: 'russia',
     size: 'large',
     logo: 'pictures/tinkoff-logo.png',
     employees: '15000+',
-    salary: '200-550 тыс. ₽',
-    market: 'Национальный',
-    culture: 'Продуктовый подход',
-    career: 'Быстрый рост',
-    projects: 'Финтех-продукты',
-    education: 'Тинькофф Образование',
-    workProcess: 'Удаленная работа'
+    salary: '200-550k ₽',
+    market: 'National',
+    culture: 'Product approach',
+    career: 'Rapid growth',
+    projects: 'Fintech products',
+    education: 'education.tbank',
+    workProcess: 'Remote work'
   },
   {
     id: 'ozon',
@@ -67,13 +67,13 @@ const companies = [
     size: 'large',
     logo: 'pictures/Ozon_logo.png',
     employees: '12000+',
-    salary: '180-400 тыс. ₽',
-    market: 'Национальный',
-    culture: 'E-commerce культура',
-    career: 'Система уровней',
-    projects: 'Маркетплейс',
-    education: 'Внутренние программы',
-    workProcess: 'Гибридный формат'
+    salary: '180-400k ₽',
+    market: 'National',
+    culture: 'E-commerce culture',
+    career: 'Level system',
+    projects: 'Marketplace',
+    education: 'Internal programs',
+    workProcess: 'Hybrid format'
   },
   {
     id: 'google',
@@ -83,12 +83,12 @@ const companies = [
     logo: 'pictures/Google_logo.png',
     employees: '150000+',
     salary: '$150-400k',
-    market: 'Глобальный',
-    culture: 'Инновационная культура',
-    career: 'Система уровней',
-    projects: 'Глобальные продукты',
+    market: 'Global',
+    culture: 'Innovative culture',
+    career: 'Level system',
+    projects: 'Global products',
     education: 'Google University',
-    workProcess: 'Гибридный формат'
+    workProcess: 'Hybrid format'
   },
   {
     id: 'microsoft',
@@ -98,12 +98,12 @@ const companies = [
     logo: 'pictures/Microsoft_logo.png',
     employees: '180000+',
     salary: '$140-350k',
-    market: 'Глобальный',
-    culture: 'Устоявшиеся традиции',
-    career: 'Многоуровневая система',
-    projects: 'Корпоративные решения',
+    market: 'Global',
+    culture: 'Established traditions',
+    career: 'Multi-level system',
+    projects: 'Corporate solutions',
     education: 'Microsoft Learn',
-    workProcess: 'Гибридный формат'
+    workProcess: 'Hybrid format'
   },
   {
     id: 'meta',
@@ -113,12 +113,12 @@ const companies = [
     logo: 'pictures/Meta_logo.png',
     employees: '70000+',
     salary: '$160-450k',
-    market: 'Глобальный',
+    market: 'Global',
     culture: 'Move Fast',
-    career: 'Система уровней',
-    projects: 'Социальные сети',
+    career: 'Level system',
+    projects: 'social networks',
     education: 'Meta Academy',
-    workProcess: 'Гибридный формат'
+    workProcess: 'Hybrid format'
   },
   {
     id: 'amazon',
@@ -128,12 +128,12 @@ const companies = [
     logo: 'pictures/Amazon_logo.png',
     employees: '1500000+',
     salary: '$150-400k',
-    market: 'Глобальный',
+    market: 'Global',
     culture: 'Customer Obsession',
     career: 'Leadership Principles',
-    projects: 'E-commerce и Cloud',
+    projects: 'E-commerce and Cloud',
     education: 'Amazon University',
-    workProcess: 'Гибридный формат'
+    workProcess: 'Hybrid format'
   },
   {
     id: 'apple',
@@ -143,12 +143,12 @@ const companies = [
     logo: 'pictures/Apple_logo.png',
     employees: '160000+',
     salary: '$160-450k',
-    market: 'Глобальный',
-    culture: 'Инновации и дизайн',
-    career: 'Система грейдов',
-    projects: 'Hardware и Software',
+    market: 'Gloabal',
+    culture: 'Innovation and design',
+    career: 'Grade system',
+    projects: 'Hardware and Software',
     education: 'Apple University',
-    workProcess: 'Гибридный формат'
+    workProcess: 'Hybrid format'
   },
   {
     id: 'skillbox',
@@ -157,13 +157,13 @@ const companies = [
     size: 'small',
     logo: 'pictures/Skillbox_logo.png',
     employees: '200-500',
-    salary: '120-250 тыс. ₽',
-    market: 'Федеральный',
-    culture: 'Стартап-культура',
-    career: 'Быстрый рост',
-    projects: 'EdTech проекты',
-    education: 'Менторство',
-    workProcess: 'Удаленная работа'
+    salary: '120-250k ₽',
+    market: 'Governmental',
+    culture: 'Startup culture',
+    career: 'Rapid growth',
+    projects: 'EdTech projects',
+    education: 'Mentoring',
+    workProcess: 'Remote work'
   },
   {
     id: 'gitlab',
@@ -173,12 +173,12 @@ const companies = [
     logo: 'pictures/GitLab_logo.png',
     employees: '1500+',
     salary: '$100-200k',
-    market: 'Глобальный',
+    market: 'Global',
     culture: 'Remote-first',
-    career: 'Прозрачная система роста',
-    projects: 'DevOps платформа',
-    education: 'Самообучение',
-    workProcess: 'Полностью удаленно'
+    career: 'Transparent growth system',
+    projects: 'DevOps platform',
+    education: 'Self-study',
+    workProcess: 'Completely remotely'
   },
   {
     id: 'notion',
@@ -188,12 +188,12 @@ const companies = [
     logo: 'pictures/Notion-logo.png',
     employees: '400+',
     salary: '$130-250k',
-    market: 'Глобальный',
-    culture: 'Продуктовый фокус',
-    career: 'Плоская структура',
+    market: 'Global',
+    culture: 'Product focus',
+    career: 'Flat structure',
     projects: 'Productivity Tools',
     education: 'Peer Learning',
-    workProcess: 'Remote-first'
+    workProcess: 'Mostly remotely'
   },
   {
     id: 'vercel',
@@ -203,12 +203,12 @@ const companies = [
     logo: 'pictures/Vercel_logo.png',
     employees: '400+',
     salary: '$120-220k',
-    market: 'Глобальный',
+    market: 'Global',
     culture: 'Developer-first',
-    career: 'Быстрый рост',
+    career: 'Rapid growth',
     projects: 'Frontend Infrastructure',
     education: 'Open Source',
-    workProcess: 'Remote-first'
+    workProcess: 'Mostly remotely'
   }
 ];
 
@@ -224,7 +224,6 @@ const company2Select = document.getElementById('company2');
 const comparisonView = document.getElementById('comparisonView');
 const companyCards = document.getElementById('companyCards');
 
-// Icons (using emoji as placeholders, you can replace with SVG icons)
 const icons = {
   users: '👥',
   money: '💰',
@@ -242,9 +241,9 @@ function init() {
   updateCompanySelects();
   updateView();
 }
-function openEng() {
-window.location.href = 'ENG_ver/index.html';
-  }
+function openRus() {
+  window.location.href = '../index.html';
+    }
 // Event Listeners
 function setupEventListeners() {
   // Size Filter Buttons
@@ -288,13 +287,13 @@ function updateCompanySelects() {
 
   [company1Select, company2Select].forEach(select => {
     select.innerHTML = `
-      <option value="">Выберите компанию</option>
-      <optgroup label="Российские компании">
+      <option value="">Select company</option>
+      <optgroup label="Russian companies">
         ${russianCompanies.map(company => `
           <option value="${company.id}">${company.name}</option>
         `).join('')}
       </optgroup>
-      <optgroup label="Зарубежные компании">
+      <optgroup label="Foreign companies">
         ${englishCompanies.map(company => `
           <option value="${company.id}">${company.name}</option>
         `).join('')}
@@ -322,13 +321,13 @@ function updateComparisonTable() {
   const company2 = companies.find(c => c.id === selectedCompany2);
 
   if (!company1 || !company2) {
-    comparisonView.innerHTML = '<p class="text-center p-4">Выберите две компании для сравнения</p>';
+    comparisonView.innerHTML = '<p class="text-center p-4">Select two companies to compare</p>';
     return;
   }
 
   comparisonView.innerHTML = `
     <div class="comparison-table">
-      <h2 style="text-align: center;">Сравнение компаний</h2>
+      <h2 style="text-align: center;">Comparison of companies</h2>
       <div class="company-headers">
         <div></div>
         <div class="company-header">
@@ -336,7 +335,7 @@ function updateComparisonTable() {
           <div class="company-title">
             ${company1.name}
             <span class="company-region">
-              ${company1.region === 'russia' ? 'Россия' : 'Зарубежная компания'}
+              ${company1.region === 'russia' ? 'Russia' : 'Foreign company'}
             </span>
           </div>
         </div>
@@ -345,19 +344,19 @@ function updateComparisonTable() {
           <div class="company-title">
             ${company2.name}
             <span class="company-region">
-              ${company2.region === 'russia' ? 'Россия' : 'Зарубежная компания'}
+              ${company2.region === 'russia' ? 'Russia' : 'Foreign company'}
             </span>
           </div>
         </div>
       </div>
-      ${createComparisonRow('Сотрудники', 'users', company1.employees, company2.employees)}
-      ${createComparisonRow('Зарплаты', 'money', company1.salary, company2.salary)}
-      ${createComparisonRow('Рынок', 'globe', company1.market, company2.market)}
-      ${createComparisonRow('Культура', 'building', company1.culture, company2.culture)}
-      ${createComparisonRow('Карьера', 'chart', company1.career, company2.career)}
-      ${createComparisonRow('Проекты', 'briefcase', company1.projects, company2.projects)}
-      ${createComparisonRow('Обучение', 'education', company1.education, company2.education)}
-      ${createComparisonRow('Рабочий процесс', 'clock', company1.workProcess, company2.workProcess)}
+      ${createComparisonRow('Employees', 'users', company1.employees, company2.employees)}
+      ${createComparisonRow('Salaries', 'money', company1.salary, company2.salary)}
+      ${createComparisonRow('Market', 'globe', company1.market, company2.market)}
+      ${createComparisonRow('Culture', 'building', company1.culture, company2.culture)}
+      ${createComparisonRow('Career', 'chart', company1.career, company2.career)}
+      ${createComparisonRow('Projects', 'briefcase', company1.projects, company2.projects)}
+      ${createComparisonRow('Education', 'education', company1.education, company2.education)}
+      ${createComparisonRow('WorkProcess', 'clock', company1.workProcess, company2.workProcess)}
     </div>
   `;
 }
@@ -385,7 +384,7 @@ function updateCompanyCards() {
       <img src="${company.logo}" alt="${company.name}" class="company-logo">
       <h3>${company.name}</h3>
       <span class="region-badge ${company.region}">
-        ${company.region === 'russia' ? 'Россия' : 'Зарубежная компания'}
+        ${company.region === 'russia' ? 'Russia' : 'Foregin company'}
       </span>
       <div class="card-info">
         <div class="card-info-item">
