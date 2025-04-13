@@ -1,4 +1,3 @@
-// Company Data
 const companies = [
   {
     id: 'yandex',
@@ -212,13 +211,11 @@ const companies = [
   }
 ];
 
-// State
 let currentSize = 'large';
 let currentView = 'table';
 let selectedCompany1 = '';
 let selectedCompany2 = '';
 
-// DOM Elements
 const company1Select = document.getElementById('company1');
 const company2Select = document.getElementById('company2');
 const comparisonView = document.getElementById('comparisonView');
@@ -235,7 +232,6 @@ const icons = {
   clock: '⏰'
 };
 
-// Initialize
 function init() {
   setupEventListeners();
   updateCompanySelects();
@@ -244,9 +240,7 @@ function init() {
 function openRus() {
   window.location.href = '../index.html';
     }
-// Event Listeners
 function setupEventListeners() {
-  // Size Filter Buttons
   document.querySelectorAll('[data-size]').forEach(button => {
     button.addEventListener('click', (e) => {
       document.querySelectorAll('[data-size]').forEach(btn => btn.classList.remove('active'));
@@ -257,7 +251,6 @@ function setupEventListeners() {
     });
   });
 
-  // View Toggle Buttons
   document.querySelectorAll('[data-view]').forEach(button => {
     button.addEventListener('click', (e) => {
       document.querySelectorAll('[data-view]').forEach(btn => btn.classList.remove('active'));
@@ -267,7 +260,6 @@ function setupEventListeners() {
     });
   });
 
-  // Company Selects
   company1Select.addEventListener('change', (e) => {
     selectedCompany1 = e.target.value;
     updateView();
@@ -279,7 +271,6 @@ function setupEventListeners() {
   });
 }
 
-// Update Company Select Options
 function updateCompanySelects() {
   const filteredCompanies = companies.filter(company => company.size === currentSize);
   const russianCompanies = filteredCompanies.filter(c => c.region === 'russia');
@@ -302,7 +293,6 @@ function updateCompanySelects() {
   });
 }
 
-// Update View
 function updateView() {
   if (currentView === 'table') {
     comparisonView.classList.remove('hidden');
@@ -315,7 +305,6 @@ function updateView() {
   }
 }
 
-// Update Comparison Table
 function updateComparisonTable() {
   const company1 = companies.find(c => c.id === selectedCompany1);
   const company2 = companies.find(c => c.id === selectedCompany2);
@@ -361,7 +350,6 @@ function updateComparisonTable() {
   `;
 }
 
-// Create Comparison Row
 function createComparisonRow(label, icon, value1, value2) {
   return `
     <div class="comparison-row">
@@ -375,7 +363,6 @@ function createComparisonRow(label, icon, value1, value2) {
   `;
 }
 
-// Update Company Cards
 function updateCompanyCards() {
   const filteredCompanies = companies.filter(company => company.size === currentSize);
   
@@ -403,7 +390,6 @@ function updateCompanyCards() {
     </div>
   `).join('');
 
-  // Add click handlers for cards
   document.querySelectorAll('.company-card').forEach(card => {
     card.addEventListener('click', () => {
       const companyId = card.dataset.id;
@@ -419,5 +405,4 @@ function updateCompanyCards() {
   });
 }
 
-// Initialize the application
 init();
