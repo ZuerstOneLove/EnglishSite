@@ -320,3 +320,76 @@ footer {
 .btn-15:active {
   top: 2px;
 }
+
+.info-button {
+  margin-top: 10px;
+  display: inline-block;
+  background: linear-gradient(rgba(37, 99, 235, 0.9), rgba(30, 64, 175, 0.9));
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: background 0.3s ease;
+}
+
+.info-button:hover {
+  background: linear-gradient(rgba(30, 64, 175, 0.9), rgba(37, 99, 235, 0.9));
+}
+
+.info-button {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 6px 14px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  outline: none;
+  margin-top: 10px;
+}
+
+.info-button.btn-15 {
+  background: #214afe;
+  border: none;
+  z-index: 1;
+}
+
+.info-button.btn-15:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  background-color: #2038a1;
+  transition: all 0.3s ease;
+}
+
+.info-button.btn-15:hover {
+  color: #fff;
+}
+
+.info-button.btn-15:hover:after {
+  left: 0;
+  width: 100%;
+}
+
+.info-button.btn-15:active {
+  top: 2px;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
