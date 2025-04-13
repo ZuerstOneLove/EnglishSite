@@ -5,6 +5,7 @@ const companies = [
     region: 'russia',
     size: 'large',
     logo: 'pictures/Yandex_icon.png',
+    url: 'https://yandex.ru/company',
     employees: '10000+',
     salary: '250-600k ₽',
     market: 'International',
@@ -20,6 +21,7 @@ const companies = [
     region: 'russia',
     size: 'large',
     logo: 'pictures/VK.com-logo.png',
+    url: 'https://vk.company',
     employees: '8000+',
     salary: '200-500k ₽',
     market: 'Governmental',
@@ -35,6 +37,7 @@ const companies = [
     region: 'russia',
     size: 'large',
     logo: 'pictures/Sberbank_Logo_2020.png',
+    url: 'https://www.sberbank.com',
     employees: '20000+',
     salary: '180-450k ₽',
     market: 'National',
@@ -50,6 +53,7 @@ const companies = [
     region: 'russia',
     size: 'large',
     logo: 'pictures/tinkoff-logo.png',
+    url: 'https://www.tbank.ru',
     employees: '15000+',
     salary: '200-550k ₽',
     market: 'National',
@@ -65,6 +69,7 @@ const companies = [
     region: 'russia',
     size: 'large',
     logo: 'pictures/Ozon_logo.png',
+    url: 'https://ozon.tech',
     employees: '12000+',
     salary: '180-400k ₽',
     market: 'National',
@@ -80,6 +85,7 @@ const companies = [
     region: 'english',
     size: 'large',
     logo: 'pictures/Google_logo.png',
+    url: 'https://about.google',
     employees: '150000+',
     salary: '$150-400k',
     market: 'Global',
@@ -95,6 +101,7 @@ const companies = [
     region: 'english',
     size: 'large',
     logo: 'pictures/Microsoft_logo.png',
+    url: 'https://www.microsoft.com',
     employees: '180000+',
     salary: '$140-350k',
     market: 'Global',
@@ -110,6 +117,7 @@ const companies = [
     region: 'english',
     size: 'large',
     logo: 'pictures/Meta_logo.png',
+    url: 'https://about.meta.com',
     employees: '70000+',
     salary: '$160-450k',
     market: 'Global',
@@ -125,6 +133,7 @@ const companies = [
     region: 'english',
     size: 'large',
     logo: 'pictures/Amazon_logo.png',
+    url: 'https://www.amazon.com',
     employees: '1500000+',
     salary: '$150-400k',
     market: 'Global',
@@ -140,6 +149,7 @@ const companies = [
     region: 'english',
     size: 'large',
     logo: 'pictures/Apple_logo.png',
+    url: 'https://www.apple.com',
     employees: '160000+',
     salary: '$160-450k',
     market: 'Gloabal',
@@ -155,6 +165,7 @@ const companies = [
     region: 'russia',
     size: 'small',
     logo: 'pictures/Skillbox_logo.png',
+    url: 'https://skillbox.ru',
     employees: '200-500',
     salary: '120-250k ₽',
     market: 'Governmental',
@@ -170,6 +181,7 @@ const companies = [
     region: 'english',
     size: 'small',
     logo: 'pictures/GitLab_logo.png',
+    url: 'https://about.gitlab.com',
     employees: '1500+',
     salary: '$100-200k',
     market: 'Global',
@@ -185,6 +197,7 @@ const companies = [
     region: 'english',
     size: 'small',
     logo: 'pictures/Notion-logo.png',
+    url: 'https://www.notion.so',
     employees: '400+',
     salary: '$130-250k',
     market: 'Global',
@@ -200,6 +213,7 @@ const companies = [
     region: 'english',
     size: 'small',
     logo: 'pictures/Vercel_logo.png',
+    url: 'https://vercel.com',
     employees: '400+',
     salary: '$120-220k',
     market: 'Global',
@@ -322,7 +336,7 @@ function updateComparisonTable() {
         <div class="company-header">
           <img src="${company1.logo}" alt="${company1.name}" class="company-logo">
           <div class="company-title">
-            ${company1.name}
+            <a href="${company1.url}" target="_blank">${company1.name}</a>
             <span class="company-region">
               ${company1.region === 'russia' ? 'Russia' : 'Foreign company'}
             </span>
@@ -331,7 +345,7 @@ function updateComparisonTable() {
         <div class="company-header">
           <img src="${company2.logo}" alt="${company2.name}" class="company-logo">
           <div class="company-title">
-            ${company2.name}
+            <a href="${company2.url}" target="_blank">${company2.name}</a>
             <span class="company-region">
               ${company2.region === 'russia' ? 'Russia' : 'Foreign company'}
             </span>
