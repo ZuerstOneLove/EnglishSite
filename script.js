@@ -419,4 +419,8 @@ function updateCompanyCards() {
   });
 }
 
+function toggleDarkMode() {
+  document.body.classList.toggle('dark');
+}
+
 init();
