@@ -393,3 +393,28 @@ footer {
   align-items: flex-start;
   gap: 10px;
 }
+
+body.dark {
+  background-color: #1f2937;
+  color: #f9fafb;
+}
+
+body.dark .company-selection,
+body.dark .comparison-table,
+body.dark .company-card,
+body.dark select {
+  background-color: #374151;
+  color: #f9fafb;
+  border-color: #4b5563;
+}
+
+body.dark .row-value,
+body.dark .company-region,
+body.dark .card-info-item {
+  color: #d1d5db;
+}
+
+.company-logo:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
